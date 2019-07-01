@@ -15,20 +15,20 @@ with open('Supermarket_data.csv') as file:
         print(row)
         groc_dict[row[0]] = (row[1], row[2])
 
-##class Cart(groc_dict):
-##    
-##    def __init__(self):
-##        self.shopping_cart = {}
-##
-##    def addToCart(self, Item_Number, Price):
-##            if self.shopping_cart == None:
-##                self.shopping_cart[Item_Number]
-##
-##    def Total(self):
-##            total = 0
-##            for items in self:
-##                    total += (self[items])*.043 + (self[items])
-##            return total
+        
+        shopping_cart = {}
+
+class Cart(groc_dict):
+
+    def addToCart(self):
+            if self.shopping_cart == None:
+                self.shopping_cart[Item_Number]
+
+    def Total(self):
+            total = 0
+            for items in self:
+                    total += (self[items])*.043 + (self[items])
+            return total
 
             
             
