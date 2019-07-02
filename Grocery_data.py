@@ -24,13 +24,17 @@ class Cart(groc_dict):
             if self.shopping_cart == None:
                 self.shopping_cart[Item_Number]
 
-    def Total(self):
+    def Subtotal():
+    
+
+    def Total():
             total = 0
             for items in self:
                     total += (self[items])*.043 + (self[items])
             return total
 
-            
+    def returnCart():
+        return.....
             
     
     
