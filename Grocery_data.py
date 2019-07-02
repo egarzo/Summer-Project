@@ -28,10 +28,7 @@ class Cart(groc_dict):
     
 
     def Total():
-            total = 0
-            for items in self:
-                    total += (self[items])*.043 + (self[items])
-            return total
+        
 
     def returnCart():
         return.....
