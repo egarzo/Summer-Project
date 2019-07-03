@@ -10,7 +10,8 @@ with open('Supermarket_data.csv') as file:
 
     groc_dict= {}
 
-##print the data    
+##print the data
+    print("Welcome to the Garzo's Market")
     for row in reader:
         print(row)
         groc_dict[row[0]] = (row[1], row[2])
@@ -18,34 +19,44 @@ with open('Supermarket_data.csv') as file:
         
         shopping_cart = {}
 
-class Cart(groc_dict):
+        def addToCart(Item_Number):
+            if shopping_cart == None:
+                shopping_cart.update[Item_Number]
+                
+                print ("Added to cart")
 
-    def addToCart(self):
-            if self.shopping_cart == None:
-                self.shopping_cart[Item_Number]
 
-    def Subtotal():
+                print (shopping_cart)
+
+##        def Subtotal():
+##        
+##
+##        def Total():
+##            
+##
+##        def returnCart():
+##            return.....
+##            
+##    
     
+######Unit Testing
 
-    def Total():
-        
-
-    def returnCart():
-        return.....
-            
-    
-    
-##def main():
-    print("Welcome to the Garzo's Market")
-        
     while True:
+        
         Item_Number = input("Enter an Item Number 1 - 40: ")
+    
 
         if Item_Number in groc_dict:
             print(groc_dict[Item_Number])
+            
+            addToCart(Item_Number)
 
         else:
-            print("Item number not found")
+            print("Item number not found, Please enter a valid Item Number!")
+
+    
+
+            
 
 
         
