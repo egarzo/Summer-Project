@@ -9,36 +9,46 @@ with open('Supermarket_data.csv') as file:
     reader = csv.reader(file)
 
     groc_dict= {}
+    shopping_cart = []
 
 ##print the data
     print("Welcome to the Garzo's Market")
     for row in reader:
         print(row)
-        groc_dict[row[0]] = [row[2]]
+        groc_dict[row[0]] = [row[1],row[2]]
 
 
     def addToCart(groc_dict):
         
-        shopping_cart = []
-        
         for Item_number in groc_dict:
-            if shopping_cart == None:
-                shopping_cart.append(Item_Number)
-
-            print("added to cart")
+            shopping_cart.append(Item_Number)
             
-            print(shopping_cart)
 
-##        def Subtotal():
-##        
-##
-##        def Total():
-##            
-##
-##        def returnCart():
-##            return.....
-##            
-##    
+            
+            print("added to cart") 
+
+            print (shopping_cart)
+            
+            
+        return shopping_cart
+        
+
+##    def Subtotal(shopping_cart):
+##        subtotal = 0
+##        for Item_Number in shopping_cart:
+##            subtotal += Item_Number
+##            print ("The Subtotal is:")
+##            print (subtotal)
+##        return subtotal
+        
+
+##    def Total():
+            
+
+    def returnCart(shopping_cart):
+        print (shopping_cart)
+            
+    
     
 ######Unit Testing
 
@@ -57,8 +67,11 @@ while True:
         addToCart(Item_Number)
 
     else:
-        break
         
+        addToCart(Item_Number)
+        returnCart(shopping_cart)
+##        Subtotal(shopping_cart)
+        break
 
 
     
