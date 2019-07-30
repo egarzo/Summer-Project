@@ -25,9 +25,9 @@ with open('Supermarket_data.csv') as file:
             
 
             
-            print("added to cart") 
+            print(groc_dict, "added to cart") 
 
-            print (shopping_cart)
+            #print (shopping_cart)
             
             
         return shopping_cart
@@ -62,7 +62,7 @@ while True:
         print("Item number not found, Please enter a valid Item Number!")
         
     
-    add = input("Would you like add more items to cart? Yes or No?: ")
+    add = input("Would you like add more items? Yes or No?: ")
     if add == "Yes":
         addToCart(Item_Number)
 
@@ -70,17 +70,14 @@ while True:
         
         addToCart(Item_Number)
         returnCart(shopping_cart)
-##        Subtotal(shopping_cart)
+    
+
         break
+#print("Items Scanned: ")
+
 
 
     
 
             
-
-
-        
-        
-    
-
 
